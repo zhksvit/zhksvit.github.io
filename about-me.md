@@ -1,6 +1,6 @@
 ---
 title: "О себе"
-description: "Образование, опыт и контакты инженера-проектировщика."
+description: "Образование, опыт и контакты."
 ---
 <div class="container">
   <p class="eyebrow">О себе</p>
