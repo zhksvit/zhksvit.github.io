@@ -38,44 +38,53 @@ description: "Образование, опыт и контакты."
 
   <div class="dim-divider"><span class="tick"></span>Опыт работы — {{ site.data.contacts.experience_years }}+ лет<span class="tick"></span></div>
 
-  <div class="resume-row">
-    <div class="resume-row__date">Апрель 2026 —<br>текущее время</div>
-    <div class="resume-row__body">
-      <h3>ООО «АП-Проект»</h3>
-      <p class="resume-row__role">Архитектор</p>
-      <ul>
-        <li>Разработка чертежей проектной документации. Разработка ТЭПов, планов пожарных секций, а так же разработка кладочных планов. По сей день работаю над Апарт-отелем в г. Пермь</li>
-      </ul>
+  <div class="resume-company">
+    <h3>ООО «АП-Проект»</h3>
+
+    <div class="resume-position">
+      <div class="resume-position__date">Апрель 2026 —<br>текущее время</div>
+      <div class="resume-position__body">
+        <p class="resume-row__role">Архитектор</p>
+        <ul>
+          <li>Разработка чертежей проектной документации. Разработка ТЭПов, планов пожарных секций, а так же разработка кладочных планов. По сей день работаю над Апарт-отелем в г. Пермь</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-position">
+      <div class="resume-position__date">Декабрь 2024 —<br>Апрель 2026</div>
+      <div class="resume-position__body">
+        <p class="resume-row__role">Инженер-Конструктор КЖ</p>
+        <ul>
+          <li>Разработка чертежей проектной и рабочей документации марки КЖ для многоэтажного жилого строительства, а так же зданий общественного назначения. Разработка ведомостей объемов работ (ВОР).</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="resume-row">
-    <div class="resume-row__date">Декабрь 2024 —<br>Апрель 2026</div>
-    <div class="resume-row__body">
-      <h3>ООО «АП-Проект»</h3>
-      <p class="resume-row__role">Инженер-Конструктор КЖ</p>
-      <ul>
-        <li>Разработка чертежей проектной и рабочей документации марки КЖ для многоэтажного жилого строительства, а так же зданий общественного назначения. Разработка ведомостей объемов работ (ВОР).</li>
-      </ul>
-    </div>
-  </div>
+  <div class="resume-company">
+    <h3>ООО «ГИП-Хаус»</h3>
 
-  <div class="resume-row">
-    <div class="resume-row__date">Январь 2024 —<br>Декабрь 2024</div>
-    <div class="resume-row__body">
-      <h3>ООО «ГИП-Хаус»</h3>
-      <p class="resume-row__role">Инженер-проектировщик</p>
-      <ul>
-        <li>Разработка проектной и рабочей документации разделов КР, АС, ОДИ и ТХ, для реставрации зданий муниципального назначения.</li>
-      </ul>
+    <div class="resume-position">
+      <div class="resume-position__date">Январь 2024 —<br>Декабрь 2024</div>
+      <div class="resume-position__body">
+        <p class="resume-row__role">Инженер-проектировщик</p>
+        <ul>
+          <li>Разработка проектной и рабочей документации разделов КР, АС, ОДИ и ТХ, для реставрации зданий муниципального назначения.</li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="dim-divider"><span class="tick"></span>Инструменты<span class="tick"></span></div>
 
   <div class="tool-tags">
-    <span class="tool-tag">Revit</span>
-    <span class="tool-tag">AutoCAD</span>
-    <span class="tool-tag">ЛИРА-САПР</span>
+    <span class="tool-tag">Revit<span class="tool-tag__level" data-level="3" title="Высокий уровень"></span></span>
+    <span class="tool-tag">AutoCAD<span class="tool-tag__level" data-level="2" title="Средний уровень"></span></span>
+    <span class="tool-tag">ЛИРА-САПР<span class="tool-tag__level" data-level="1" title="Начальный уровень"></span></span>
   </div>
+  <p class="tool-tags__legend">Уровни владения инструментами:</p>
+  <p class="tool-tags__legend">●○○ начальный;</p>
+  <p class="tool-tags__legend">●●○ средний;</p>
+  <p class="tool-tags__legend">●●● высокий.</p>
 </div>

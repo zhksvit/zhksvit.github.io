@@ -605,6 +605,41 @@ img.zoomable { cursor: zoom-in; }
   border: 1px solid var(--line-strong);
   background: var(--paper-raised);
   padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Индикатор уровня владения — три точки, рисуются одним элементом
+   через box-shadow. data-level: 1 / 2 / 3 закрашенных точки из трёх. */
+.tool-tag__level {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  box-shadow: 10px 0 0 var(--line-strong), 20px 0 0 var(--line-strong);
+  margin-right: 20px; /* box-shadow не занимает место в раскладке — резервируем его сами */
+  cursor: default;
+}
+.tool-tag__level[data-level="1"] {
+  background: var(--accent);
+  box-shadow: 10px 0 0 var(--line-strong), 20px 0 0 var(--line-strong);
+}
+.tool-tag__level[data-level="2"] {
+  background: var(--accent);
+  box-shadow: 10px 0 0 var(--accent), 20px 0 0 var(--line-strong);
+}
+.tool-tag__level[data-level="3"] {
+  background: var(--accent);
+  box-shadow: 10px 0 0 var(--accent), 20px 0 0 var(--accent);
+}
+
+.tool-tags__legend {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  margin: 4px 0 0;
 }
 
 /* ==========================================================================
@@ -625,7 +660,8 @@ img.zoomable { cursor: zoom-in; }
 }
 .resume-row__body h3 { margin-bottom: 4px; }
 .resume-row__role {
-  color: var(--ink-soft);
+  color: var(--ink);
+  font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 10px;
 }
@@ -636,6 +672,33 @@ img.zoomable { cursor: zoom-in; }
 @media (max-width: 620px) {
   .resume-row { grid-template-columns: 1fr; gap: 6px; }
   .resume-row__date { color: var(--ink); font-weight: 500; }
+}
+
+/* Компания с несколькими должностями: название компании — один раз сверху,
+   а срок работы стоит уже слева от конкретной должности, не от компании. */
+.resume-company { padding: 22px 0; }
+.resume-company + .resume-company { border-top: 1px solid var(--line); }
+.resume-company > h3 { margin-bottom: 4px; }
+
+.resume-position {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  padding-top: 16px;
+}
+.resume-position__date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  padding-top: 2px;
+}
+.resume-position__body ul { margin: 0; padding-left: 18px; }
+.resume-position__body li { margin-bottom: 6px; color: var(--ink-soft); }
+.resume-position__body li::marker { color: var(--accent); }
+
+@media (max-width: 620px) {
+  .resume-position { grid-template-columns: 1fr; gap: 6px; }
+  .resume-position__date { color: var(--ink); font-weight: 500; }
 }
 
 /* ==========================================================================
