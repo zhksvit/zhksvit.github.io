@@ -79,7 +79,7 @@ description: "Образование, опыт и контакты."
   <div class="dim-divider"><span class="tick"></span>Инструменты<span class="tick"></span></div>
 
   <div class="tool-tags">
-    <span class="tool-tag">Revit<span class="tool-tag__level" data-level="3" title="Высокий уровень"></span></span>
+    <span class="tool-tag">Revit<span class="tool-tag__level" data-level="2" title="Средний уровень"></span></span>
     <span class="tool-tag">AutoCAD<span class="tool-tag__level" data-level="2" title="Средний уровень"></span></span>
     <span class="tool-tag">ЛИРА-САПР<span class="tool-tag__level" data-level="1" title="Начальный уровень"></span></span>
   </div>
